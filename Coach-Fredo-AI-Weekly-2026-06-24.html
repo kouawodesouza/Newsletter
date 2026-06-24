@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coach Fredo AI Weekly — June 24, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8edf2;
+    color: #1F2937;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .wrapper {
+    max-width: 780px;
+    margin: 32px auto;
+    background: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: #0B2545;
+    padding: 24px 36px 18px;
+    position: relative;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .header-logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .header-logo span.white { color: #ffffff; }
+  .header-logo span.gold  { color: #F4B860; }
+  .header-right {
+    text-align: right;
+  }
+  .header-site {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .header-tagline {
+    color: #90E0EF;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 2px;
+  }
+  .header-issue {
+    color: #90E0EF;
+    font-size: 11px;
+    margin-top: 6px;
+  }
+  .gold-stripe {
+    height: 4px;
+    background: #F4B860;
+    margin: 0;
+  }
+
+  /* ── BODY ── */
+  .body {
+    padding: 28px 36px 32px;
+  }
+
+  /* ── EDITOR'S NOTE ── */
+  .editors-note {
+    background: #F7F9FC;
+    border-top: 3px solid #0B2545;
+    border-bottom: 3px solid #0B2545;
+    padding: 14px 18px;
+    font-style: italic;
+    font-size: 13.5px;
+    color: #1F2937;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    font-size: 17px;
+    font-weight: 900;
+    color: #0B2545;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    margin-top: 28px;
+  }
+  .section-divider {
+    border: none;
+    border-top: 2.5px solid #00B4D8;
+    margin-bottom: 18px;
+  }
+
+  /* ── GLANCE BOX ── */
+  .glance-box {
+    background: #F7F9FC;
+    border-left: 4px solid #00B4D8;
+    border-top: 1px solid #00B4D8;
+    border-bottom: 1px solid #00B4D8;
+    border-right: 1px solid #00B4D8;
+    padding: 14px 18px;
+    margin-bottom: 28px;
+  }
+  .glance-item {
+    padding: 5px 0;
+    font-size: 13px;
+    line-height: 1.55;
+    border-bottom: 1px solid #dce6ef;
+  }
+  .glance-item:last-child { border-bottom: none; }
+  .glance-label {
+    color: #00B4D8;
+    font-weight: bold;
+  }
+
+  /* ── COMPANY ENTRY ── */
+  .entry {
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e5eaf0;
+  }
+  .entry:last-child { border-bottom: none; margin-bottom: 0; }
+
+  .entry-title {
+    font-size: 14.5px;
+    font-weight: 900;
+    color: #00B4D8;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  .entry-body {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #1F2937;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  /* ── WHY IT MATTERS ── */
+  .why-box {
+    background: #FFFBF0;
+    border-top: 2px solid #F4B860;
+    border-bottom: 2px solid #F4B860;
+    padding: 8px 14px;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: #7A5200;
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+  .why-label { color: #0B2545; }
+
+  /* ── SOURCE LINK ── */
+  .source-line {
+    font-size: 11.5px;
+    font-style: italic;
+    color: #555;
+    margin-top: 4px;
+  }
+  .source-line a {
+    color: #00B4D8;
+    text-decoration: underline;
+  }
+  .source-line a:hover { color: #0B2545; }
+
+  /* ── TAKEAWAY BOX ── */
+  .takeaway-box {
+    background: #FFFBF0;
+    border: 3px solid #F4B860;
+    padding: 18px 22px;
+    margin-top: 8px;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #1F2937;
+  }
+  .takeaway-box b { color: #0B2545; }
+  .takeaway-sign {
+    margin-top: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #0B2545;
+  }
+
+  /* ── FOOTER ── */
+  .footer-gold { height: 4px; background: #F4B860; }
+  .footer {
+    background: #0B2545;
+    padding: 14px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-left p { color: #ffffff; font-size: 11px; font-weight: bold; }
+  .footer-left p.sub { color: #90E0EF; font-style: italic; font-weight: normal; font-size: 10.5px; margin-top: 2px; }
+  .footer-right { text-align: right; }
+  .footer-right p { color: #ffffff; font-size: 11px; }
+  .footer-right p.sub { color: #90E0EF; font-style: italic; font-size: 10.5px; margin-top: 2px; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .wrapper { margin: 0; border-radius: 0; }
+    .body { padding: 20px 18px 24px; }
+    .header { padding: 18px 18px 14px; }
+    .header-logo { font-size: 22px; }
+    .footer { padding: 12px 18px; flex-direction: column; align-items: flex-start; }
+    .footer-right { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div class="header-logo">
+        <span class="white">COACH FREDO</span> <span class="gold">AI WEEKLY</span>
+      </div>
+      <div class="header-right">
+        <div class="header-site"><a href="https://coachfredoaiconsulting.com" target="_blank" style="color:#ffffff; text-decoration:underline;">coachfredoaiconsulting.com</a></div>
+        <div class="header-tagline">AI for solo &amp; small business</div>
+      </div>
+    </div>
+    <div class="header-issue">Issue: June 24, 2026 &nbsp;•&nbsp; Volume 7</div>
+  </div>
+  <div class="gold-stripe"></div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- EDITOR'S NOTE -->
+    <div class="editors-note">
+      This week, the AI race hit an inflection point: Anthropic filed confidentially for an IPO and launched Claude Fable 5, while the Meta-Manus deal continued to unravel under Chinese government pressure. Microsoft bet big on always-on agentic AI at Build 2026, OpenAI deepened enterprise roots with Samsung and Getty Images, and the EU gave businesses 16 extra months to meet high-risk AI compliance deadlines. The bottom line: AI is moving from experiment to infrastructure — and now is the time to build your foundation. <em>— Coach Fredo</em>
+    </div>
+
+    <!-- THIS WEEK AT A GLANCE -->
+    <div class="section-header">This Week at a Glance</div>
+    <hr class="section-divider">
+    <div class="glance-box">
+      <div class="glance-item"><span class="glance-label">OpenAI:</span> GPT-5.5 Instant is now the default model; Samsung global deploy completed; Getty Images signs multi-year content deal.</div>
+      <div class="glance-item"><span class="glance-label">Google:</span> Gemini app rebuilt with 'Daily Brief' morning digest + Gemini Spark personal agent; Gemini 2.5 Pro with Deep Think tops benchmarks.</div>
+      <div class="glance-item"><span class="glance-label">Anthropic:</span> Claude Fable 5 launches for enterprise; IPO filing confirmed; $150M Claude Corps fellowship for 1,000 nonprofit fellows announced.</div>
+      <div class="glance-item"><span class="glance-label">Manus AI:</span> Meta-Manus operational split complete after China block; early backers pursue $2B buyback; ARR hits $450M.</div>
+      <div class="glance-item"><span class="glance-label">Microsoft:</span> Build 2026: Scout 'Autopilot' agent + MAI-Thinking-1 debut; Copilot SMB SKUs become permanent from July 1.</div>
+      <div class="glance-item"><span class="glance-label">EU AI Act:</span> Parliament approves 16-month extension; high-risk AI compliance deadline moves to December 2027.</div>
+    </div>
+
+    <!-- THE BIG SIX -->
+    <div class="section-header">The Big Six</div>
+    <hr class="section-divider">
+
+    <!-- OpenAI -->
+    <div class="entry">
+      <div class="entry-title">⬡ OpenAI / ChatGPT</div>
+      <div class="entry-body">
+        OpenAI's biggest enterprise week yet: ChatGPT was deployed to all Samsung Electronics employees worldwide, and Getty Images signed a multi-year agreement to make its licensed image library searchable inside ChatGPT. GPT-5.5 Instant is now the default model after GPT-5.2 was retired June 12, and OpenAI previewed GPT-5.6 for a late-June release. New admin tools include credit usage analytics for Enterprise accounts and Slack connector actions for ChatGPT Enterprise workspaces.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> The Slack connector means ChatGPT can now automate reminders and file uploads directly inside your team chat — a genuine time-saver for small teams that live in Slack.</div>
+      <div class="source-line">Source: <a href="https://openai.com/news/" target="_blank">openai.com/news</a> &nbsp;|&nbsp; <a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-22-2026" target="_blank">buildfastwithai.com</a></div>
+    </div>
+
+    <!-- Google -->
+    <div class="entry">
+      <div class="entry-title">⬡ Google / Gemini</div>
+      <div class="entry-body">
+        Google rebuilt the Gemini app from scratch with a 'Neural Expressive' design and two headline features: Daily Brief — a personalized morning digest of your inbox, calendar, and top tasks — and Gemini Spark, a 24/7 personal AI agent for your digital life. Gemini 2.5 Pro with Deep Think reasoning mode launched as Google's most capable model ever, reportedly beating competitors on several key benchmarks. Developers note: the old Gemini CLI reached end-of-life June 18 — migrate to Agentic 2.0 CLI immediately.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> Daily Brief is a direct play for your morning routine — Google Workspace users can now get an AI-curated start to their day without switching between apps.</div>
+      <div class="source-line">Source: <a href="https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/" target="_blank">techcrunch.com — Gemini I/O 2026</a> &nbsp;|&nbsp; <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank">blog.google — I/O keynote</a></div>
+    </div>
+
+    <!-- Anthropic -->
+    <div class="entry">
+      <div class="entry-title">⬡ Anthropic / Claude</div>
+      <div class="entry-body">
+        A landmark week for Anthropic. Claude Fable 5 launched for enterprise and paid subscribers, scoring more than 10% above Claude Opus 4.8 on software engineering and knowledge benchmarks — though briefly suspended June 12 under a US government directive. Simultaneously, Anthropic filed confidentially for an IPO, the strongest signal yet of long-term platform stability. The company also announced Claude Corps: a $150 million fellowship placing 1,000 early-career AI workers inside US nonprofits starting October 2026.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> An Anthropic IPO signals long-term stability for businesses building on Claude's API — and Fable 5's reasoning and coding improvements make it meaningfully more powerful for consultants and developers today.</div>
+      <div class="source-line">Source: <a href="https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html" target="_blank">cnbc.com — Claude Fable 5</a> &nbsp;|&nbsp; <a href="https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/" target="_blank">cbsnews.com — Anthropic IPO</a></div>
+    </div>
+
+    <!-- Manus AI -->
+    <div class="entry">
+      <div class="entry-title">⬡ Manus AI</div>
+      <div class="entry-body">
+        The Meta-Manus story took another sharp turn. After China blocked Meta's $2 billion acquisition in April, Meta completed a full operational split from Manus by June 11 — cutting data sharing, revoking system access, and barring Meta employees from using Manus tools. Manus's original Chinese backers are now reportedly pursuing a buyback at the same $2B valuation. Despite the turbulence, Manus reached $450 million in annualized revenue, up from $127 million in 2025.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> If you use Manus AI agent tools, the ownership uncertainty may affect roadmap and data policies — a good moment to review AI vendor concentration risk in your stack.</div>
+      <div class="source-line">Source: <a href="https://www.bloomberg.com/news/articles/2026-06-11/meta-severs-manus-data-access-after-china-orders-buyout-unwound" target="_blank">bloomberg.com — Manus deal unwind</a> &nbsp;|&nbsp; <a href="https://manus.im/" target="_blank">manus.im</a></div>
+    </div>
+
+    <!-- Microsoft -->
+    <div class="entry">
+      <div class="entry-title">⬡ Microsoft / Copilot &amp; Azure AI</div>
+      <div class="entry-body">
+        Microsoft Build 2026 (June 2–3) was an all-in agentic AI bet. Microsoft Scout debuted as the first 'Autopilot' agent — always-on, with its own identity, acting on your behalf. Seven new MAI models launched, including MAI-Thinking-1 (reasoning) and MAI-Code-1 (tuned for GitHub and VS Code). Both Anthropic Claude and OpenAI GPT-5.5 are now deployable via Microsoft Foundry. From July 1, Microsoft 365 Business Standard and Business Premium with Copilot become permanent SMB SKUs.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> Permanent Copilot SKUs mean predictable AI budgeting for small businesses — no more pilot pricing confusion. Mark July 1 to review your Microsoft licensing.</div>
+      <div class="source-line">Source: <a href="https://www.tomsguide.com/news/live/microsoft-build-2026" target="_blank">tomsguide.com — Build 2026</a> &nbsp;|&nbsp; <a href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/" target="_blank">blogs.microsoft.com</a></div>
+    </div>
+
+    <!-- xAI -->
+    <div class="entry">
+      <div class="entry-title">⬡ xAI / Grok</div>
+      <div class="entry-body">
+        xAI expanded on two fronts this week. Grok Imagine Video 1.5 went fully live June 16 — available via API, grok.com, and mobile at $4.20/minute — with strong improvements in motion physics and audio, claiming the top spot on the AI video leaderboard at 86% below Sora's price. Grok models also went natively live on Databricks Agent Bricks, letting enterprise teams run agents over their internal data. For everyday users, xAI launched a free Grok for Microsoft Word add-in.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> The free Word add-in is an immediate, zero-cost productivity win for solo operators — install it now and use it to turn rough notes into polished client documents.</div>
+      <div class="source-line">Source: <a href="https://www.techtimes.com/articles/318635/20260618/grok-imagine-video-15-goes-live-xai-tops-ai-video-leaderboard-86-percent-below-sora.htm" target="_blank">techtimes.com — Grok Video 1.5</a> &nbsp;|&nbsp; <a href="https://www.basenor.com/blogs/news/xai-grok-lands-on-databricks-at-the-2026-data-ai-summit" target="_blank">basenor.com — Grok on Databricks</a></div>
+    </div>
+
+    <!-- INTERNATIONAL -->
+    <div class="section-header">International AI</div>
+    <hr class="section-divider">
+
+    <!-- France -->
+    <div class="entry">
+      <div class="entry-title">🇫🇷 France — Mistral AI</div>
+      <div class="entry-body">
+        Europe's AI champion Mistral is in talks to raise roughly €3 billion ($3.5B) at a €20 billion valuation, positioning it as a credible rival to US AI labs. Mistral rebranded its Le Chat assistant to 'Vibe' — now an agentic tool that manages inbox, calendar, deep research, and recurring workflows in one place. The company is aggressively targeting US enterprise clients while building a 10 MW inference data center near Paris (Essonne), due Q3 2026.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> Mistral's Vibe is a European-sovereign AI alternative for businesses with EU data residency concerns — worth evaluating if your clients operate under GDPR-heavy requirements.</div>
+      <div class="source-line">Source: <a href="https://www.bloomberg.com/news/articles/2026-06-12/france-s-mistral-in-funding-talks-at-about-20-billion-valuation" target="_blank">bloomberg.com — Mistral €20B valuation</a> &nbsp;|&nbsp; <a href="https://www.nbcnews.com/tech/tech-news/mistral-selling-wall-street-us-ai-giants-chat-rcna346578" target="_blank">nbcnews.com</a></div>
+    </div>
+
+    <!-- EU -->
+    <div class="entry">
+      <div class="entry-title">🇪🇺 European Union — AI Act Update</div>
+      <div class="entry-body">
+        The European Parliament approved the Digital Omnibus amendment on June 16, granting a critical 16-month extension: the high-risk AI compliance deadline for Annex III systems moves from August 2, 2026 to December 2, 2027. Two new prohibited AI practices take effect December 2026: generating non-consensual intimate images and CSAM. Existing GPAI model rules (enforced since August 2025) remain in effect, and the Code of Practice on AI content labeling is due this month.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> If you serve EU clients, the 16-month extension is a relief — but start your AI risk inventory in Q3 2026, not Q4 2027.</div>
+      <div class="source-line">Source: <a href="https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/" target="_blank">globalpolicywatch.com — EU AI Act</a> &nbsp;|&nbsp; <a href="https://axis-intelligence.com/eu-ai-act-news-2026/" target="_blank">axis-intelligence.com</a></div>
+    </div>
+
+    <!-- China -->
+    <div class="entry">
+      <div class="entry-title">🇨🇳 China — DeepSeek, Alibaba &amp; Baidu</div>
+      <div class="entry-body">
+        China's AI ecosystem accelerated. DeepSeek V4-Pro-Max (launched April 2026) continues to outperform GPT-5.2 and Gemini 3.0 Pro on key reasoning benchmarks as a free open-weight model — the most disruptive open-source release of 2026. Alibaba's Cloud AI revenue grew 36% year-over-year with Qwen surpassing 300 million monthly active users and a new 10,000-chip domestic AI data center coming online. Baidu will open-source its Ernie models from June 30, further compressing AI adoption costs globally.
+      </div>
+      <div class="why-box"><span class="why-label">WHY IT MATTERS FOR SMBs:</span> Open-weight Chinese models like DeepSeek V4 and Ernie are now competitive with paid US models — if cost is a barrier to AI adoption in your business, these deserve a serious look.</div>
+      <div class="source-line">Source: <a href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/" target="_blank">techcrunch.com — DeepSeek V4</a> &nbsp;|&nbsp; <a href="https://www.buildaiq.com/articles/chinas-ai-ecosystem-explained-deepseek-baidu-alibaba-tencent-and-the-race-for-ai-self-reliance" target="_blank">buildaiq.com — China AI overview</a></div>
+    </div>
+
+    <!-- PRACTICAL TAKEAWAY -->
+    <div class="section-header">Practical Takeaway</div>
+    <hr class="section-divider">
+    <div class="takeaway-box">
+      <b>YOUR ACTION THIS WEEK:</b> The AI tool landscape just got bigger and more confusing — that is exactly when you should simplify, not expand. Pick one AI tool you already use and go deeper: set up ChatGPT's Slack connector, try Google's Daily Brief, or install Grok's free Word add-in. Mastery of one tool delivers more value than dabbling in five. And if you serve EU clients, add 'AI compliance check' to your Q3 planning — the December 2027 deadline is closer than it sounds.
+      <div class="takeaway-sign">— Coach Fredo, AI Consulting LLC</div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- FOOTER -->
+  <div class="footer-gold"></div>
+  <div class="footer">
+    <div class="footer-left">
+      <p>Coach Fredo AI Consulting LLC</p>
+      <p class="sub">Forwarded this? Subscribe at <a href="https://coachfredoaiconsulting.com" target="_blank" style="color:#90E0EF;">coachfredoaiconsulting.com</a></p>
+    </div>
+    <div class="footer-right">
+      <p>&copy; 2026 Coach Fredo</p>
+      <p class="sub">Practical AI for solo entrepreneurs</p>
+    </div>
+  </div>
+
+</div><!-- /wrapper -->
+</body>
+</html>
