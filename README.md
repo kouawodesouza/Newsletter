@@ -1,19 +1,19 @@
-# Coach Fredo AI Weekly 📰
+# Coach Fredo AI Weekly ð°
 
-**Practical AI news for solo entrepreneurs and small business owners — delivered every Wednesday.**
+**Practical AI news for solo entrepreneurs and small business owners â delivered every Wednesday.**
 
 ---
 
 ## What Is This Newsletter?
 
-**Coach Fredo AI Weekly** is a curated, no-hype briefing on the most important artificial intelligence developments of the week — translated into plain language with one clear goal: *what does this mean for your business?*
+**Coach Fredo AI Weekly** is a curated, no-hype briefing on the most important artificial intelligence developments of the week â translated into plain language with one clear goal: *what does this mean for your business?*
 
 Every issue covers:
 
-- **The Big Six** — the week's top story from OpenAI/ChatGPT, Google/Gemini, Anthropic/Claude, Manus AI, Microsoft Copilot, and xAI/Grok
-- **International AI** — key developments from France (Mistral), the European Union (EU AI Act), and China (DeepSeek, Alibaba, Baidu)
-- **This Week at a Glance** — a quick-scan summary of every headline
-- **Practical Takeaway** — one concrete action you can take this week as a solo or small business owner
+- **The Big Six** â the week's top story from OpenAI/ChatGPT, Google/Gemini, Anthropic/Claude, Manus AI, Microsoft Copilot, and xAI/Grok
+- **International AI** â key developments from France (Mistral), the European Union (EU AI Act), and China (DeepSeek, Alibaba, Baidu)
+- **This Week at a Glance** â a quick-scan summary of every headline
+- **Practical Takeaway** â one concrete action you can take this week as a solo or small business owner
 
 ---
 
@@ -33,9 +33,9 @@ This newsletter is written for:
 
 Today, Coach Fredo dedicates his time to helping students, professionals, entrepreneurs, and business leaders understand and apply AI in practical, accessible ways.
 
-> *"Technology should empower people — not overwhelm them."*
+> *"Technology should empower people â not overwhelm them."*
 
-🌐 **Website:** [coachfredoaiconsulting.com](https://coachfredoaiconsulting.com)
+ð **Website:** [coachfredoaiconsulting.com](https://coachfredoaiconsulting.com)
 
 ---
 
@@ -46,6 +46,7 @@ Each weekly issue is published as a self-contained HTML file. Open any file in a
 | Issue Date | File |
 |---|---|
 | June 24, 2026 | [Coach-Fredo-AI-Weekly-2026-06-24.html](./Coach-Fredo-AI-Weekly-2026-06-24.html) |
+| July 01, 2026 | [Coach-Fredo-AI-Weekly-2026-07-01.html](./Coach-Fredo-AI-Weekly-2026-07-01.html) |
 
 ---
 
@@ -59,10 +60,10 @@ New issues are added to this repository each week.
 
 ## Connect With Coach Fredo
 
-- 🌐 [coachfredoaiconsulting.com](https://coachfredoaiconsulting.com)
-- 💼 LinkedIn: Search **Coach Fredo De Souza**
-- 📧 Contact: [kouawodesouza@gmail.com](mailto:kouawodesouza@gmail.com)
+- ð [coachfredoaiconsulting.com](https://coachfredoaiconsulting.com)
+- ð¼ LinkedIn: Search **Coach Fredo De Souza**
+- ð§ Contact: [kouawodesouza@gmail.com](mailto:kouawodesouza@gmail.com)
 
 ---
 
-*© 2026 Coach Fredo AI Consulting LLC — Practical AI for solo entrepreneurs.*
+*Â© 2026 Coach Fredo AI Consulting LLC â Practical AI for solo entrepreneurs.*
