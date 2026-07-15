@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coach Fredo AI Weekly — July 15, 2026</title>
+<meta name="description" content="This week: agents that do the work, not just answer questions — GPT-5.6, ChatGPT Work, Gemini 3.5 Pro delay, Claude Sonnet 5, Grok 4.5, Manus/Tencent, and EU AI Act enforcement.">
+
+<!-- Open Graph tags for LinkedIn / social previews -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Coach Fredo AI Weekly — July 15, 2026">
+<meta property="og:description" content="This week: AI agents stop chatting and start working. GPT-5.6, ChatGPT Work, Gemini 3.5 Pro delay, Claude Sonnet 5, Grok 4.5, Manus/Tencent, and EU AI Act enforcement — translated for solo & small business owners.">
+<meta property="og:site_name" content="Coach Fredo AI Consulting LLC">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Coach Fredo AI Weekly — July 15, 2026">
+<meta name="twitter:description" content="AI agents stop chatting and start working. This week's Big Six + international AI news, translated for small business.">
+
+<style>
+  :root{
+    --navy:#0B2545;
+    --teal:#00B4D8;
+    --gold:#F4B860;
+    --bg-tint:#F7F9FC;
+    --charcoal:#1F2937;
+    --light-blue:#BFE3F0;
+    --cream:#FFF8EC;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--charcoal);
+    background:#e9edf2;
+  }
+  .page{
+    max-width:720px;
+    margin:0 auto;
+    background:#ffffff;
+    box-shadow:0 0 24px rgba(11,37,69,0.12);
+  }
+  /* HEADER */
+  .header{
+    background:var(--navy);
+    padding:22px 28px 18px;
+    position:relative;
+  }
+  .header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .brand{
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing:0.5px;
+  }
+  .brand .coach{color:#ffffff;}
+  .brand .ai{color:var(--gold);}
+  .issue-date{
+    color:var(--light-blue);
+    font-size:13px;
+    margin-top:4px;
+  }
+  .header-right{
+    text-align:right;
+  }
+  .site{
+    color:#ffffff;
+    font-weight:bold;
+    font-size:13px;
+  }
+  .tagline{
+    color:var(--light-blue);
+    font-size:11.5px;
+    font-style:italic;
+    margin-top:2px;
+  }
+  .gold-stripe{
+    height:5px;
+    background:var(--gold);
+  }
+  /* SHARE BAR */
+  .share-bar{
+    background:var(--bg-tint);
+    border-bottom:1px solid #dfe6ee;
+    padding:10px 28px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+    font-size:13px;
+  }
+  .share-bar span.label{color:var(--navy); font-weight:bold;}
+  .share-btn{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:16px;
+    text-decoration:none;
+    font-size:12.5px;
+    font-weight:bold;
+    cursor:pointer;
+    border:1.5px solid var(--teal);
+    color:var(--teal);
+    background:#fff;
+  }
+  .share-btn:hover{ background:var(--teal); color:#fff; }
+
+  .content{ padding:26px 28px 8px; }
+
+  /* EDITOR'S NOTE */
+  .editors-note{
+    font-style:italic;
+    font-size:14.5px;
+    line-height:1.55;
+    color:var(--charcoal);
+  }
+  .signature{
+    text-align:right;
+    font-style:italic;
+    color:var(--navy);
+    font-weight:bold;
+    margin-top:6px;
+  }
+
+  /* GLANCE BOX */
+  .glance-box{
+    background:var(--bg-tint);
+    border:1.5px solid var(--teal);
+    border-radius:6px;
+    padding:14px 18px;
+    margin:22px 0;
+  }
+  .glance-box h3{
+    color:var(--navy);
+    font-size:14px;
+    margin:0 0 8px;
+    letter-spacing:0.4px;
+  }
+  .glance-box ul{ margin:0; padding-left:18px; }
+  .glance-box li{ margin-bottom:6px; font-size:14.5px; line-height:1.5; }
+  .glance-box li a{ color:var(--teal); text-decoration:none; font-style:italic; }
+
+  /* SECTION HEADER */
+  .section-header{
+    background:var(--navy);
+    color:#ffffff;
+    font-weight:bold;
+    font-size:17px;
+    padding:10px 14px;
+    margin:28px 0 14px;
+    border-bottom:3px solid var(--teal);
+    letter-spacing:0.5px;
+  }
+
+  /* COMPANY / COUNTRY BLOCK */
+  .item{ margin-bottom:22px; }
+  .item h4{
+    color:var(--teal);
+    font-size:16px;
+    margin:0 0 6px;
+  }
+  .item p.body-text{
+    font-size:14.5px;
+    line-height:1.6;
+    margin:0 0 8px;
+  }
+  .smb-callout{
+    background:var(--cream);
+    border:1px solid var(--gold);
+    border-radius:5px;
+    padding:8px 12px;
+    font-size:13.5px;
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .smb-callout b{ color:var(--navy); }
+  .source-link{
+    font-size:12.5px;
+    font-style:italic;
+    color:var(--teal);
+  }
+
+  /* TAKEAWAY */
+  .takeaway-box{
+    background:var(--cream);
+    border:2px solid var(--gold);
+    border-radius:6px;
+    padding:16px 20px;
+    margin:26px 0 10px;
+  }
+  .takeaway-box h3{
+    color:var(--navy);
+    font-size:15px;
+    margin:0 0 8px;
+  }
+  .takeaway-box p{
+    font-size:14.5px;
+    line-height:1.6;
+    color:var(--navy);
+    margin:0;
+  }
+  .takeaway-box .sig{
+    text-align:right;
+    font-weight:bold;
+    margin-top:8px;
+  }
+
+  /* FOOTER */
+  .footer{
+    background:var(--navy);
+    border-top:4px solid var(--gold);
+    padding:16px 28px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+  }
+  .footer .col{ font-size:13px; }
+  .footer .col.right{ text-align:right; }
+  .footer .main{ color:#ffffff; font-weight:bold; }
+  .footer .sub{ color:var(--light-blue); font-style:italic; font-size:12px; margin-top:3px; }
+
+  @media (max-width:480px){
+    .header-right{ text-align:left; margin-top:6px; }
+    .footer .col.right{ text-align:left; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <div class="brand"><span class="coach">COACH FREDO </span><span class="ai">AI WEEKLY</span></div>
+        <div class="issue-date">Issue: July 15, 2026</div>
+      </div>
+      <div class="header-right">
+        <div class="site">coachfredoaiconsulting.com</div>
+        <div class="tagline">AI for solo &amp; small business</div>
+      </div>
+    </div>
+  </div>
+  <div class="gold-stripe"></div>
+
+  <div class="share-bar">
+    <span class="label">Share this issue:</span>
+    <a class="share-btn" target="_blank" rel="noopener"
+       onclick="this.href='https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href)">LinkedIn</a>
+    <a class="share-btn" target="_blank" rel="noopener"
+       onclick="this.href='https://twitter.com/intent/tweet?text='+encodeURIComponent('This week in AI, translated for small business: ')+'&url='+encodeURIComponent(window.location.href)">X / Twitter</a>
+    <a class="share-btn" target="_blank" rel="noopener"
+       onclick="this.href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href)">Facebook</a>
+  </div>
+
+  <div class="content">
+
+    <p class="editors-note">This week the story isn't smarter chatbots — it's chatbots that stop chatting and start working. OpenAI, Microsoft, and xAI all shipped agents built to carry a task for hours instead of answering one prompt, while regulators in Brussels and ownership fights in Beijing remind us the ground underneath is still shifting fast.</p>
+    <p class="signature">— Coach Fredo</p>
+
+    <div class="glance-box">
+      <h3>THIS WEEK AT A GLANCE</h3>
+      <ul>
+        <li>OpenAI ships GPT-5.6 and a new ChatGPT Work agent that runs tasks for hours unsupervised. <a href="https://www.axios.com/2026/07/09/ai-openai-gpt-release">(Bloomberg)</a></li>
+        <li>Google delays Gemini 3.5 Pro to July 17 for a full architecture rebuild. <a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a">(BigGo Finance)</a></li>
+        <li>Claude Sonnet 5 becomes the default model for every Free and Pro user. <a href="https://www.anthropic.com/news">(Anthropic)</a></li>
+        <li>Tencent moves to buy Manus after Beijing forced Meta to unwind its $2B deal. <a href="https://www.bloomberg.com/news/articles/2026-07-10">(Bloomberg)</a></li>
+        <li>Grok 4.5 launches as a coding/agentic tool, not yet available in the EU. <a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model">(Axios)</a></li>
+        <li>EU AI Act enforcement begins: chatbot disclosure rules are now legally live. <a href="https://www.techtimes.com/articles/320101/20260710/eu-ai-act-enforcement-here-chatbot-rules-live-high-risk-ai-delay-now-binding-law.htm">(Tech Times)</a></li>
+      </ul>
+    </div>
+
+    <div class="section-header">THE BIG SIX</div>
+
+    <div class="item">
+      <h4>ChatGPT (OpenAI)</h4>
+      <p class="body-text">OpenAI released GPT-5.6 on July 9 in three tiers — Sol, Terra, and Luna — calling it its most capable system yet. Alongside it, OpenAI launched ChatGPT Work, an agent that takes a goal, gathers information across your apps, and stays on a project for hours by breaking it into steps it completes on its own.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> If you've been doing multi-step research or drafting tasks by hand, this is the moment to test handing a whole project to an agent instead of prompting it step by step.</div>
+      <div class="source-link">Source: <a href="https://www.axios.com/2026/07/09/ai-openai-gpt-release" style="color:var(--teal);">Bloomberg / Axios</a></div>
+    </div>
+
+    <div class="item">
+      <h4>Gemini (Google)</h4>
+      <p class="body-text">Google DeepMind pushed Gemini 3.5 Pro's launch to July 17, scrapping the old 2.5 Pro architecture for a full rebuild aimed at better math reasoning and a 2-million-token context window. Separately, the Gemini app has grown to over 900 million monthly users, more than double last year.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> A 2M-token context window means you'll eventually be able to hand Gemini your entire client history or full-year books in one go — worth waiting for if you're Workspace-based.</div>
+      <div class="source-link">Source: <a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a" style="color:var(--teal);">BigGo Finance</a></div>
+    </div>
+
+    <div class="item">
+      <h4>Claude (Anthropic)</h4>
+      <p class="body-text">Claude Sonnet 5 launched July 1 and is now the default model for every Free and Pro user, performing close to flagship Opus 4.8 on many tasks at introductory pricing through August 31. Anthropic also launched Claude for Teachers (free premium access for verified US K-12 educators) and restored Fable 5 to global access after a brief export-control pause.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> If you're on the free or Pro plan, you already have a materially stronger model today — no upgrade needed to benefit.</div>
+      <div class="source-link">Source: <a href="https://www.anthropic.com/news" style="color:var(--teal);">Anthropic Newsroom</a></div>
+    </div>
+
+    <div class="item">
+      <h4>Manus</h4>
+      <p class="body-text">Tencent is in talks to become Manus' largest shareholder after Beijing ordered Meta to unwind its $2 billion acquisition of the agentic-AI startup. Tencent and Manus' original backers (ZhenFund, HSG) are reportedly offering to buy the company back from Meta.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> Ownership churn like this is a reminder to keep your workflows portable — don't build critical automations on a single agent platform you can't easily replace.</div>
+      <div class="source-link">Source: <a href="https://www.bloomberg.com/news/articles/2026-07-10" style="color:var(--teal);">Bloomberg</a></div>
+    </div>
+
+    <div class="item">
+      <h4>Microsoft</h4>
+      <p class="body-text">OpenAI's GPT-5.6 is now the preferred model inside Microsoft 365 Copilot — Word, Excel, PowerPoint, Chat, and Cowork — reaffirming the OpenAI partnership just as reports surfaced that Microsoft was diversifying away from it. OpenAI will also be enabled as a subprocessor for Copilot and Copilot Studio starting July 24 unless admins opt out.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> If you use Microsoft 365 Copilot, check your tenant's subprocessor settings before July 24 if you have data-handling preferences about which company processes your prompts.</div>
+      <div class="source-link">Source: <a href="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter" style="color:var(--teal);">TechCrunch</a></div>
+    </div>
+
+    <div class="item">
+      <h4>Grok (xAI)</h4>
+      <p class="body-text">xAI launched Grok 4.5 on July 8, its first release since going public and acquiring Cursor, positioned as a coding and agentic-work tool rather than a general chatbot. On July 14, Musk said Grok 4.5 took the #1 spot on the Long-Horizon Terminal-Bench. It is not yet available in the EU.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> If you write code or run technical workflows, Grok 4.5 (via Cursor or the console) is worth a trial run — but EU-based readers will need to wait.</div>
+      <div class="source-link">Source: <a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model" style="color:var(--teal);">Axios</a></div>
+    </div>
+
+    <div class="section-header">INTERNATIONAL</div>
+
+    <div class="item">
+      <h4>🇫🇷 France</h4>
+      <p class="body-text">Mistral is bringing a new open-weight Mixture-of-Experts model into early access this month and just released Robostral Navigate, a robotics model that lets any robot fleet navigate using a single camera. CEO Arthur Mensch also urged France, at the G7 summit, to reserve cheap nuclear power for European AI companies over US firms expanding on French soil.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> Mistral's push into open-weight models remains one of the more affordable, self-hostable options for a small business wary of per-seat AI subscriptions.</div>
+      <div class="source-link">Source: <a href="https://www.bloomberg.com/news/articles/2026-07-08" style="color:var(--teal);">Bloomberg / Digitimes</a></div>
+    </div>
+
+    <div class="item">
+      <h4>🇪🇺 European Union</h4>
+      <p class="body-text">EU AI Act enforcement officially began July 10, with chatbot disclosure and deepfake-labeling rules now legally binding. The Digital Omnibus package finalized July 9 confirms the enforcement timeline, and on August 2 the European Commission gains the power to fine general-purpose AI providers directly.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> If you use AI chatbots on your own website or in customer-facing tools and serve EU customers, you now need a clear AI-disclosure notice — don't wait for August 2 to check.</div>
+      <div class="source-link">Source: <a href="https://www.techtimes.com/articles/320101/20260710/eu-ai-act-enforcement-here-chatbot-rules-live-high-risk-ai-delay-now-binding-law.htm" style="color:var(--teal);">Tech Times</a></div>
+    </div>
+
+    <div class="item">
+      <h4>🇨🇳 China</h4>
+      <p class="body-text">DeepSeek founder Liang Wenfeng's stake hit $36 billion in value as the company announced plans for a 2027 China IPO and confirmed it's developing its own inference chip. Moonshot AI is targeting a $30 billion valuation on the strength of its Kimi chatbot, while Alibaba (Qwen3-Max-Thinking) and Baidu (Ernie 5.0) both shipped new flagship models.</p>
+      <div class="smb-callout"><b>WHY IT MATTERS FOR SMBs:</b> Chinese labs keep shipping capable, often cheaper open models — worth a look if you're cost-sensitive, though check your data-residency comfort level before routing client data through them.</div>
+      <div class="source-link">Source: <a href="https://www.techtimes.com/articles/320518/20260714/deepseek-founder-tops-ai-wealth-list-beijing-holds-only-board-vote.htm" style="color:var(--teal);">Bloomberg / Tech Times</a></div>
+    </div>
+
+    <div class="takeaway-box">
+      <h3>PRACTICAL TAKEAWAY</h3>
+      <p>Pick one AI assistant this week and hand it a real multi-step job — drafting a client proposal, reconciling last month's invoices, or prepping a follow-up email sequence — instead of chasing every new model announcement. The tools moved from answering questions to doing jobs this week; your time is better spent testing that shift on one task than reading about six of them.</p>
+      <p class="sig">— Coach Fredo, AI Consulting LLC</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="col left">
+      <div class="main">Coach Fredo AI Consulting LLC</div>
+      <div class="sub">Forwarded this? Subscribe at coachfredoaiconsulting.com</div>
+    </div>
+    <div class="col right">
+      <div class="main">© 2026 Coach Fredo</div>
+      <div class="sub">Practical AI for solo entrepreneurs</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
