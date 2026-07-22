@@ -48,6 +48,7 @@ Each weekly issue is published as a self-contained HTML file. Open any file in a
 | June 24, 2026 | [Coach-Fredo-AI-Weekly-2026-06-24.html](./Coach-Fredo-AI-Weekly-2026-06-24.html) |
 | July 01, 2026 | [Coach-Fredo-AI-Weekly-2026-07-01.html](./Coach-Fredo-AI-Weekly-2026-07-01.html) |
 | July 15, 2026 | [Coach-Fredo-AI-Weekly-2026-07-15.html](./Coach-Fredo-AI-Weekly-2026-07-15.html) |
+| July 22, 2026 | [Coach-Fredo-AI-Weekly-2026-07-22.html](./Coach-Fredo-AI-Weekly-2026-07-22.html) |
 
 ---
 
